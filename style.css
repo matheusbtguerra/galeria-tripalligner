@@ -1,0 +1,142 @@
+@charset "utf-8";
+@font-face {
+    font-family: cocogoose;
+    src: url(/Cocogoose\ Pro\ Light-trial.ttf);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    padding-bottom: 1% ;
+    padding-top: 1%;
+    padding-left: 1.3%;
+    text-shadow: 0.5px 0.5px 2px #000;
+    border-bottom: solid 8px #53b9e8;
+    background-color: #f8f2e5;
+}
+
+body {
+    margin:0;
+    padding:0;
+    height:100vh;
+    width:100vw;
+    background: #f9f9f9;
+    font-family: 'cocogoose';
+}   
+
+header span {
+    color: #53b9e8;
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute; 
+    border-radius: 30px;
+    top:50%;
+    left:50%;
+    margin-top: 8%;
+    transform: translate(-50%, -50%);
+
+}
+
+.text {
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 50%;
+}
+
+.text-principal h2 span {
+    color: #53b9e8;
+}
+
+.text-principal {
+    background-color: #f8f2e5;
+    border-radius: 20px;
+    padding: 0.5em
+}
+
+.imagem img{
+    width: 100%;
+    height:100%;
+
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    background-color: #f5e9d0;
+    width: 50px;
+    height: 10px;
+    border-radius: 100px;
+    margin: 6px;
+    cursor: pointer; 
+    transition: .5s;
+}
+
+.bar:hover {
+    background-color: #53b9e8;
+    opacity: 80%;
+}
+
+input{
+    display:none;
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem {
+    width: 16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked ~.img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked ~.img1 {
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~.img1 {
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~.img1 {
+    margin-left: -50%;
+}
+
+#imagem5:checked ~.img1 {
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~.img1 {
+    margin-left: -83.3333333333%;
+}
+
+footer {
+    text-align: left;
+    margin-top: 60%;
+    padding-bottom: 1% ;
+    padding-top: 1%;
+    padding-left: 1.3%;
+    border-top: solid 8px #53b9e8;
+    background-color: #f8f2e5;
+}
